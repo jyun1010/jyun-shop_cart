@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>購物車</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h1>購物明細</h1>
+
+        <div class="shopping_item">
+          <div class="item">
+            <span> 抗敏感牙膏兩入組</span>
+            <div class="count_price">
+              <span> *1 </span>
+              <span>113 NTD</span>
+            </div>
+          </div>
+          <div class="item">
+            <span> 餅乾組合包</span>
+            <div class="count_price">
+              <span> *2 </span>
+              <span>70 NTD</span>
+            </div>
+          </div>
+          <div class="item">
+            <span> 蘋果蘇打氣泡飲</span>
+            <div class="count_price">
+              <span> *1 </span>
+              <span>23NTD</span>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+       
+          <div class="total_item">總計 <span>3</span> 項</div>
+          <div class="total_price">共 <span>206</span> 元</div>
+
+      </div>
+      <div class="right">
+        <div class="processes">
+          <div class="process process1 process_done">1</div>
+          <span> 配送方法 </span>
+          <div class="process process2 process_active">2</div>
+          <span> 付款方式 </span>
+          <div class="process process3 process_not">3</div>
+        </div>
+        <div class="choose_pay">
+          <h2>請選擇付款方式</h2>
+          <ul>
+            <li>超商取貨付款</li>
+            <li>超商代碼繳費</li>
+            <li>
+              信用卡
+              <div class="card_imgs">
+                <img src="" alt="" />
+                <img src="" alt="" />
+                <img src="" alt="" />
+              </div>
+            </li>
+            <li>
+              LINE Pay
+              <img src="" alt="" />
+            </li>
+            <li>
+              Pay Pal
+              <img src="" alt="" />
+            </li>
+            <li>
+              Taiwan Pay
+              <img src="" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="car_info">
+          <h2>卡片資訊</h2>
+          <div class="card_num">卡號
+            <input type="text" placeholder="XXXX" maxlength="4"/> - 
+            <input type="text" placeholder="XXXX" maxlength="4"/> - 
+            <input type="text" placeholder="XXXX" maxlength="4"/> - 
+            <input type="text" placeholder="XXXX" maxlength="4"/>
+          </div>
+          <div class="card_date">效期
+            <input type="text" placeholder="MM" maxlength="2"/> / 
+            <input type="text" placeholder="YY" maxlength="2"/>
+          </div>
+          <div class="safe_code">安全碼
+            <input type="text" name="" id="" placeholder="XXX" maxlength="3"/>
+          </div>
+        </div>
+        <div class="next_btn">
+          <a href="#">下一步</a> 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

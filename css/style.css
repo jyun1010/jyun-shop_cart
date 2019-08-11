@@ -1,0 +1,222 @@
+body, html {
+    height: 100%;
+    position: relative;
+    font-family: 微軟正黑體;
+    color: #6C6C6C;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.left {
+    background-color: #FFF8C3;
+    height: 100%;
+    width: 25%;
+    position: relative;
+}
+
+.left h1 {
+    width: 30%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+ 
+    margin: 20px auto;
+    position: relative;
+}
+
+.left h1::before, .left h1::after {
+    content: "";
+    width: 80%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+}
+
+.left h1::before {
+    left: -80%;
+}
+
+.left h1::after {
+    right: -80%;
+}
+
+.shopping_item {
+    width: 80%;
+    height: 60%;
+    border: 1px solid #6C6C6C;
+ 
+    background-color: #fff;
+    padding: 20px 15px;
+    margin: 0 auto;
+    line-height: 2;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.count_price {
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 90%;
+    margin: 10px auto;
+    height: 5px;
+    background-color: #fff;
+}
+
+.total_item, .total_price {
+    font-size: 2rem;
+    margin: 10px 15px 10px auto;
+    text-align: right;
+    font-weight: bolder;
+
+}
+
+.total_item span, .total_price span {
+    color: #EB5454;
+}
+
+.right {
+    width: 75%;
+    height: 100%;
+}
+
+.processes {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.process {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+    margin: 3% auto;
+    position: relative;
+    font-weight: bolder;
+    border: 4px solid transparent;
+}
+
+.process_done{
+    background-color: #FFF8C3;
+  
+}
+.process_active{
+    background-color: #FFF8C3;
+    border: 4px solid #6C6C6C;
+    color: #fff;
+    text-shadow: 2px 2px 2px #6C6C6C;
+    
+}
+
+.process_not{
+    background-color: #fff;
+    color: #FAF0A2;
+    border: 4px solid #D5D5D5;
+}
+
+.process::after {
+    content: "";
+    width: 580%;
+    height: 5px;
+    background-color: #FFF8C3;
+    position: absolute;
+    top: 50%;
+    left: 108%;
+}
+
+.process::after {
+    right: -580%;
+}
+.process_active::after{
+    background-color: #D5D5D5;
+}
+.process3::after{
+    display: none;
+}
+
+.processes span{
+    margin-top: 2%;
+    font-size: 1.8rem;
+    font-weight: bolder;
+ 
+}
+
+.choose_pay,.car_info{
+    width: 70%;
+    margin: 0 auto;
+}
+.choose_pay h2,.car_info h2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #6C6C6C;
+    margin: 15px 0;
+}
+
+.choose_pay li{
+    padding: 15px 10px;
+    border-bottom: 1px solid #6C6C6C ;
+    display: flex;
+    font-size: 1.3rem;
+
+    
+}
+.choose_pay li:hover{
+    background-color: #FFF8C3;
+    border-radius: 15px;
+}
+.car_info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card_num,.card_date,.safe_code{
+    font-size: 1.3rem;
+    margin: 15px auto;
+}
+.card_num input,.card_date input,.safe_code input{
+    width: 15%;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #6C6C6C;
+    background-color: #F8F8F8;
+}
+
+.next_btn{
+    width: 10%;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #FFF8C3;
+    position: absolute;
+    right: 10%;
+    border-radius: 15px;
+
+}
+.next_btn a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #6C6C6C;
+}
